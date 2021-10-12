@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type = "text/javascript"></script>
+    <script src = "js/jquery.js"></script>
+  </head>
+  <body>
+    <h2>Selectors for jquery</h2>
+    <p style="color:DodgerBlue"> para 1 not div</p>
+    <p> para 2 not div</p>
+    <div class="mydiv" id="firstdiv">
+        <p>this is the First Paragraph</p>
+    </div>
+    <div  id="seconddiv">
+        <p>this is the second Paragraph</p>
+    </div>
+    <div id="thirddiv" class="mydiv">
+      <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+          <li>list item 3</li>
+          <li>list item 4</li>
+      </ul>
+    </div>
+    <button name="submit" id="btn1">Click me</button>
+
+  </body>
+  <script>
+  $(document).ready(function() {
+       // Stuff to do as soon as the DOM is ready
+         $("button").click(fn1);
+
+
+         function fn1(){
+           $("p:first").fadeToggle(2000);
+         }
+
+    });
+
+  </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta lang="en">
+  <title>forms JS</title>
+  <script type="text/javascript">
+  function validate(){
+  var uname = document.getElementById("name").value;
+  var regex = /E000/'
+  if(regex.test(uname))
+  {
+    alert("valid ");
+  }
+  else
+  {
+  alert("invalid");
+  }
+  </script>
+</head>
+
+
+<body>
+ <form action ="wel.html">
+
+   <input id="name" placeholder="enter Name" type="text" ><label id="buls" style="color:red; visibility:hidden;" />Invalid</label></input><br><br>
+
+   <button id="submit" onclick="validate();">submit</button>
+   
+ </form>
+</body>
+</html>

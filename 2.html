@@ -1,0 +1,19 @@
+
+<html>
+<head>
+    <title>Img Manipulations</title>
+    <script type="text/javascript">
+	function changeimg(){
+	//alert();
+	document.getElementById("img1").src ="images_bulb/on.jpg";
+	}
+	function returnimg(){
+	//alert();
+	document.getElementById("img1").src ="images_bulb/off.jpg";
+	}
+    </script>
+</head>
+<body>
+    <img id ="img1" onmouseover="changeimg()"  onmouseleave="returnimg()" src ="images_bulb/off.jpg"/>
+</body>
+</html>

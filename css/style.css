@@ -1,0 +1,23 @@
+body{
+  box-shadow: 0px 0px 2px black;
+}
+.mydiv{
+  border: 2px solid red;
+  margin: 5px;
+  padding : 20px;
+  box-shadow: 0px 0px 5px black;
+  text-align: \justify;
+
+}
+p{
+  padding-left: 5px;
+}
+div p{
+  padding-left: 10px;
+  color: red;
+}
+
+body p{
+  color:green;
+  font-style: italic;
+}
